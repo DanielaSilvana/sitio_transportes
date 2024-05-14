@@ -27,6 +27,7 @@ header h1{
 
 nav{
     background-color: #6da9ed;
+    margin-bottom: 20px;
 }
 
 nav ul{
@@ -67,7 +68,7 @@ footer{
     background-color: #ccc;
     padding: 20px 0;
     text-align: center; 
-    /* margin-top: 20px; >separación en todas las páginas! */
+    margin-top: 20px; /* separación entre elemento y elemento en todas las páginas! */
 }
 
 /*clase tipo .contenedor*/
@@ -84,17 +85,159 @@ h2{
 
 /* inicio home */
 
+.columnas{
+    display: flex;
+}
+
 .bienvenidos{
     width: 75%;
+    padding-right: 20px;
+    /* background-color: yellow; >para ver las diferencias del maquetado después se saca*/
 }
 
 .testimonios{
     width: 25%;
 }
 
+.bienvenidos p{
+    font-size: 20px;
+}
 
+.testimonio{
+    /* width: 25%; */
+    background-color: #ccc;
+    padding: 16px;
+}
 
+.testimonio .cita{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    display: block; /*lo baja*/
+}
 
-
+.testimonio .autor{
+    font-size: 12px;
+    display: block; /*para poder centrarlo (sobra espacio en su cajita a diferencia del inline-flex)*/
+    background-color: lightcoral; /*en el original no está, es ej*/
+    text-align: center;
+    margin: 16px 0;
+}
+/*testimonio-s trabajaban con span > block*/
 
 /* fin home */
+
+
+/* inicio nosotros */
+.historia p {
+    font-size: 12px;
+}
+
+.personas{
+    display: flex;
+    justify-content: space-between; /*acá puedo usar cualquiera de las 3 opc*/
+}
+
+.persona{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    width: 18%;
+    padding: 12px;
+    box-sizing: border-box; /*para que contemple el padding, el border y respete el width. Si se usa padding/border este atributo fija también*/
+}
+
+.persona img{
+    border-radius: 50%;
+    box-shadow: 0 0 5px black;
+    width: 40%;
+    margin: 10px 0 12px;
+}
+
+.persona h5,
+.persona h6{
+    color: #2e64a1;
+    margin: 0;
+    font-weight: normal;
+}
+
+.persona h5{
+    font-size: 14px;
+}
+
+.persona h6{
+    font-style: italic;
+    font-size: 13px;
+}
+
+.persona p{
+    font-size: 12px;
+}
+
+/* fin nosotros */
+
+
+/* inicio contacto */
+
+.contacto{
+    display: flex;
+}
+
+.contacto div{
+    width: 100%;
+}
+
+.datos p{
+    font-size: 14px;
+}
+
+.datos ul li{
+    font-size: 13px;
+}
+
+.formulario p{
+    display: flex; /*para marcar los 80px de label*/
+}
+
+ .formulario p label{
+    min-width: 100px;
+    background-color: yellow;
+ }
+
+.formulario p input,
+.formulario p textarea{
+    width: 100%;
+    background-color: #ccc;
+    border: 1px solid #f60404;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 14px;
+}
+
+.formulario p textarea{
+    resize: none;
+    height: 150px;
+}
+
+.formulario input[type="submit"]{
+    background-color: #6da9ed;
+    width: auto; /*none no funciona sino su valor por default*/
+    padding: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    color: white;
+    cursor: pointer;
+    position: relative;
+    left: 100px;
+}
+
+/* text-align > p
+display flex, justify content: center > p */
+
+/* fin contacto */
+
+/*
+:hover de enviar
+ajustar input/textarea > otras vías
+nombre > medio del rect amarillo eje vertical
+iconos > cuales serían los pasos
+*/
