@@ -1,0 +1,77 @@
+/* font-family: "Open Sans", sans-serif; 
+
+azul: #2e64a1
+*/
+
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px; /*por defecto está en 16px*/
+    line-height: 20px; /*alto de línea*/
+}
+
+header{
+    background-color: #2e64a1;
+}
+
+/*compuesto (header logo h1, por ej) o h1 directamente: */
+header h1{
+    color:white;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block; /* display: inline-flex; se puede usar flexbox!*/
+    position: relative; /*como ej en el sitio, el resto con caja flexible*/
+    bottom: 35px; /*lo sube > Transportes X */
+}
+
+nav{
+    background-color: #6da9ed;
+}
+
+nav ul{
+    /* tridente en nav: */
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+    display: flex; /* para que se distribuya horizontalmente la botonera (Home, etc)*/
+}
+
+nav ul li{
+    flex-grow: 1; /* para que se espacie la botonera^ */
+}
+
+/*flex-grow especifica el factor de crecimiento de un elemento flexible (que tiene asignado display:flex), 
+en su dirección principal. 
+Éste factor especifica qué cantidad del espacio restante dentro del contenedor flexible, debería ocupar el item en cuestión.*/
+
+nav ul li a{
+    color: white;
+    text-decoration: none; /*le quita la underline del hipervínculo*/
+    /* background-color: orange; */
+    padding: 3px 0;
+    display: flex; /*para que quede en bloque*/
+    justify-content: center;
+}
+
+/*hover: pseudoclase útil para <a> o <div>*/
+nav ul li a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+nav ul li a.activo{
+    background-color: #4c76a5;
+}
+
+footer{
+    background-color: #ccc;
+    padding: 20px 0;
+    text-align: center; 
+    margin-top: 20px; /*separación en todas las páginas!*/
+}
+
+/*clase tipo .contenedor*/
+.holder{ 
+    width: 960px;
+    margin: 0 auto;
+    /* background-color: orange; */
+}
+
