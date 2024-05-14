@@ -11,6 +11,7 @@ body{
 
 header{
     background-color: #2e64a1;
+    padding-top: 20px;
 }
 
 /*compuesto (header logo h1, por ej) o h1 directamente: */
@@ -18,7 +19,8 @@ header h1{
     color:white;
     font-weight: 100;
     font-style: italic;
-    display: inline-block; /* display: inline-flex; se puede usar flexbox!*/
+    /* display: inline-flex; se puede usar flexbox!*/
+    display: inline-block; 
     position: relative; /*como ej en el sitio, el resto con caja flexible*/
     bottom: 35px; /*lo sube > Transportes X */
 }
@@ -65,7 +67,7 @@ footer{
     background-color: #ccc;
     padding: 20px 0;
     text-align: center; 
-    margin-top: 20px; /*separación en todas las páginas!*/
+    /* margin-top: 20px; >separación en todas las páginas! */
 }
 
 /*clase tipo .contenedor*/
