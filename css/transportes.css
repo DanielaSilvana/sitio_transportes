@@ -82,7 +82,8 @@ footer {
 
 /*clase tipo .contenedor*/
 .holder {
-    width: 960px;
+    /* width: 960px; */
+    max-width: 960px;
     margin: 0 auto;
     /* background-color: orange; */
 }
@@ -93,6 +94,13 @@ h2 {
 }
 
 /* inicio home */
+
+.homeimg img{
+    max-width: 100%;
+
+
+}
+
 
 .columnas {
     display: flex;
@@ -272,3 +280,113 @@ ajustar input/textarea > otras vías = gap en .contacto
 nombre > medio del rect amarillo eje vertical
 iconos > cuales serían los pasos
 */
+
+/* inicio @media 550 */
+
+@media screen and (max-width:550px){
+
+    /* home */
+    .columnas{
+        flex-direction: column;
+    }
+
+    .bienvenidos,
+    .testimonios{
+        width: 100%;
+    }
+
+    .holder{
+        padding: 0 16px;
+    }
+
+    .personas{
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .persona{
+        width: 47%;
+    }
+
+    /*contacto*/
+    .contacto{
+        flex-direction: column;
+    }
+
+    /* .datos{
+        display: none;
+    } >Para que no sea visible*/
+
+    header .holder{
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 16px 0;
+
+    }
+
+    header h1{
+        position: static;
+        margin-left: 10px;
+        /* display: none; > si me molesta el título SE ACOMODA EN EL MEDIO INDISTINTAMENTE*/
+        font-size: 27px;
+    }
+
+    header img{
+        width: 80px;
+    }
+
+}
+/* fin @media 550 */
+
+@media screen and (max-width:320px){
+
+nav ul.holder{
+    flex-direction: column;
+    padding: 0;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
