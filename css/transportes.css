@@ -93,14 +93,11 @@ h2 {
     font-weight: 400;
 }
 
-/* inicio home */
 
+/* inicio home */
 .homeimg img{
     max-width: 100%;
-
-
 }
-
 
 .columnas {
     display: flex;
@@ -143,7 +140,6 @@ h2 {
     text-align: center;
     margin: 16px 0;
 }
-
 /*testimonio-s trabajaban con span > block*/
 
 /* fin home */
@@ -196,9 +192,51 @@ h2 {
 .persona p {
     font-size: 12px;
 }
-
 /* fin nosotros */
 
+
+/* inicio servicios */
+.servicio{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 15px; /*------------------------*/
+}
+
+.servicio img{
+    border-radius: 13px;
+    max-width: 225px;
+    display: block;
+}
+
+.servicio .info h4{
+    color: #2e64a1;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+    /* text-decoration: underline; */
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+
+.servicio .info p{
+    font-size: 13px;
+    line-height: 25x; /*alto del espaciado interlineal del texto?*/
+}
+
+/*FALTÓ TERMINARGH*/
+
+
+
+
+
+
+
+
+/* fin servicios */
 
 /* inicio contacto */
 
@@ -268,7 +306,6 @@ h2 {
     background-color: #2e64a1;
 }
 
-
 /* text-align > p
 display flex, justify content: center > p */
 
@@ -281,8 +318,9 @@ nombre > medio del rect amarillo eje vertical
 iconos > cuales serían los pasos
 */
 
-/* inicio @media 550 */
 
+
+/* inicio @media 550 */
 @media screen and (max-width:550px){
 
     /* home */
@@ -323,7 +361,6 @@ iconos > cuales serían los pasos
         justify-content: center;
         align-items: center;
         padding: 0 0 16px 0;
-
     }
 
     header h1{
@@ -336,57 +373,23 @@ iconos > cuales serían los pasos
     header img{
         width: 80px;
     }
-
 }
 /* fin @media 550 */
 
+
+/*único cambio, botonera>hamburger*/
 @media screen and (max-width:320px){
 
-nav ul.holder{
-    flex-direction: column;
-    padding: 0;
+    nav ul.holder{
+        flex-direction: column;
+        padding: 0;
+    }
 }
+/*fin @media 320*/
 
-}
+/*No terminamos la sección Servicios:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ponerle una caja a cada transporte + 
+dirección de las fotos con pseudoclase y row/row-reverse
+*/
 
